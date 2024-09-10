@@ -1,6 +1,6 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@* <PageTitle>Home</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
 <MudText Class="mb-8">Welcome to your new app, powered by MudBlazor and the .NET 8 Template!</MudText>
@@ -55,4 +55,30 @@
     <MudLink Href="https://github.com/dotnet/aspnetcore/issues/51468#issue-1950424116" Target="_blank" Typo="Typo.body2" Color="Color.Primary">
         More details
     </MudLink>
-</MudText>
+</MudText> *@
+
+<PageTitle>Accueil</PageTitle>
+<MudContainer>
+    <MudPaper>
+        <MudText Typo="Typo.h4">Page d'Accueil - Dématérialisation des Documents</MudText>
+        <MudForm>
+            <MudTextField Label="Nom" @bind-Value="nom" AdornmentColor="Color.Success"/>
+            <MudTextField Label="Email" @bind-Value="email" Disabled="true" />
+            <MudTextField Label="Numéro de Document" @bind-Value="documentNumber" Disabled="true" />
+            <MudTextField Label="Description" @bind-Value="description" />
+            <MudButton OnClick="SubmitForm">Soumettre</MudButton>
+        </MudForm>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private string nom = "";
+    private string email = "exemple@domaine.com"; // Champ non modifiable
+    private string documentNumber = "12345"; // Champ non modifiable
+    private string description = "";
+
+    private void SubmitForm()
+    {
+        // Logique de soumission du formulaire
+    }
+}
