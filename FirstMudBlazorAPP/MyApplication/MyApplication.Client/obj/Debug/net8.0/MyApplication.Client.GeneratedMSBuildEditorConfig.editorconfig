@@ -5,7 +5,7 @@ build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.MudDebugAnalyzer = 
 build_property.MudAllowedAttributePattern = 
-build_property.MudIllegalParameters = 
+build_property.MudIllegalParameters = V7IgnoreCase
 build_property.TargetFramework = net8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -33,16 +33,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/MudBlazorProjects/FirstMudBlazorAPP/MyApplication/MyApplication.Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[/workspaces/MudBlazorProjects/FirstMudBlazorAPP/MyApplication/MyApplication.Client/Pages/Archives.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/MudBlazorProjects/FirstMudBlazorAPP/MyApplication/MyApplication.Client/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/MudBlazorProjects/FirstMudBlazorAPP/MyApplication/MyApplication.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/workspaces/MudBlazorProjects/FirstMudBlazorAPP/MyApplication/MyApplication.Client/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/MudBlazorProjects/FirstMudBlazorAPP/MyApplication/MyApplication.Client/Routes.razor]
