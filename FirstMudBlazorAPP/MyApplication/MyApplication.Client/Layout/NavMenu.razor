@@ -1,11 +1,27 @@
-﻿
-<MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Rounded.Home">Home</MudNavLink>
-    <MudNavLink Href="archives" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Rounded.Archive">Archives</MudNavLink>
-    <MudNavLink Href="dashboard" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Rounded.Dashboard">Dashboard</MudNavLink>
-    <MudNavGroup Title="Settings" Expanded="true">
-        <MudNavLink Href="/users"  Match="NavLinkMatch.Prefix">Users</MudNavLink>
-        <MudNavLink Href="/security"  Match="NavLinkMatch.Prefix">Security</MudNavLink>
-    </MudNavGroup>
-</MudNavMenu>
+﻿<MudPaper Height="100%" Style="overflow:hidden; position:relative;">
+    
+        <MudDrawer @bind-Open="@_open" Fixed="false" Elevation="1" Variant="@DrawerVariant.Mini" OpenMiniOnHover="true">
+            <MudNavMenu>
+                <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Rounded.Home">Home</MudNavLink>
+                <MudNavLink Href="archives" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Rounded.Archive">Archives
+                </MudNavLink>
+                <MudNavLink Href="dashboard" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Rounded.Dashboard">
+                    Dashboard</MudNavLink>
+                <MudNavGroup Title="Settings" Expanded="true">
+                    <MudNavLink Href="/users" Match="NavLinkMatch.Prefix">Users</MudNavLink>
+                    <MudNavLink Href="/security" Match="NavLinkMatch.Prefix">Security</MudNavLink>
+                </MudNavGroup>
+            </MudNavMenu>
+        </MudDrawer>
+        
+   
+</MudPaper>
+@code
+{
+    private bool _open = false;
 
+    private void ToggleDrawer()
+    {
+        _open = !_open;
+    }
+}
