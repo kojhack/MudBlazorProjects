@@ -13,9 +13,15 @@
     <SourceRoot Include="/home/codespace/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nextended.blazor/7.0.38/buildTransitive/Nextended.Blazor.props" Condition="Exists('$(NuGetPackageRoot)nextended.blazor/7.0.38/buildTransitive/Nextended.Blazor.props')" />
     <Import Project="$(NuGetPackageRoot)mudblazor/7.8.0/buildTransitive/MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor/7.8.0/buildTransitive/MudBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)mudblazor.markdown/1.0.2/buildTransitive/MudBlazor.Markdown.props" Condition="Exists('$(NuGetPackageRoot)mudblazor.markdown/1.0.2/buildTransitive/MudBlazor.Markdown.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorjs/2.1.6/buildTransitive/BlazorJS.props" Condition="Exists('$(NuGetPackageRoot)blazorjs/2.1.6/buildTransitive/BlazorJS.props')" />
+    <Import Project="$(NuGetPackageRoot)auralizeblazor/1.1.3/buildTransitive/AuralizeBlazor.props" Condition="Exists('$(NuGetPackageRoot)auralizeblazor/1.1.3/buildTransitive/AuralizeBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)mudblazor.extensions/2.0.5/buildTransitive/MudBlazor.Extensions.props" Condition="Exists('$(NuGetPackageRoot)mudblazor.extensions/2.0.5/buildTransitive/MudBlazor.Extensions.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgBuildBundlerMinifier Condition=" '$(PkgBuildBundlerMinifier)' == '' ">/home/codespace/.nuget/packages/buildbundlerminifier/3.2.449</PkgBuildBundlerMinifier>
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">/home/codespace/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/8.0.8</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
   </PropertyGroup>
 </Project>

@@ -16,7 +16,13 @@
             <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;">Paper 2</MudPaper>
         </MudItem>
         <MudItem xs="12" sm="12" md="4">
-            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;">Paper 3</MudPaper>
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"><MudChart ChartType="ChartType.Donut" Width="300px" Height="300px" InputData="@data" InputLabels="@labels">
+	<CustomGraphics>
+		<text class="donut-inner-text" x="47%" y="35%" dominant-baseline="middle" text-anchor="middle" fill="black" font-family="Helvetica" font-size="2">Total</text>
+		<text class="donut-inner-text" x="47%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="black" font-family="Helvetica" font-size="5">@data.Sum().ToString()</text>
+	</CustomGraphics>
+</MudChart>
+</MudPaper>
         </MudItem>
         <MudItem xs="12" sm="6">
             <MudGrid>
@@ -29,7 +35,12 @@
             </MudGrid>
         </MudItem>
         <MudItem xs="12" sm="6">
-            <MudPaper Elevation="2" Class="pa-4" Style="height: 100%">Paper 6</MudPaper>
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 100%"><div>
+    <MudChart ChartType="ChartType.Bar" ChartSeries="@Series" @bind-SelectedIndex="Index" XAxisLabels="@XAxisLabels" Width="100%" Height="350px"></MudChart>
+</div>
+<MudText Typo="Typo.h6">Selected portion of the chart: @Index</MudText>
+
+</MudPaper>
         </MudItem>
         <MudItem xs="12" sm="6" md="4">
             <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;">Paper 7</MudPaper>
@@ -53,4 +64,22 @@
         elevation = random.Next(0, 25);
     }
     
+}
+
+@code {
+    private int Index = -1; //default value cannot be 0 -> first selectedindex is 0.
+
+    public List<ChartSeries> Series = new List<ChartSeries>()
+    {
+        new ChartSeries() { Name = "United States", Data = new double[] { 40, 20, 25, 27, 46, 60, 48, 80, 15 } },
+        new ChartSeries() { Name = "Germany", Data = new double[] { 19, 24, 35, 13, 28, 15, 13, 16, 31 } },
+        new ChartSeries() { Name = "Sweden", Data = new double[] { 8, 6, 11, 13, 4, 16, 10, 16, 18 } },
+    };
+    public string[] XAxisLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" };
+}
+
+
+@code {
+    public double[] data = { 25, 77, 28, 5 };
+    public string[] labels = { "Oil", "Coal", "Gas", "Biomass" };
 }

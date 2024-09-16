@@ -2,6 +2,140 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AuralizeBlazor/1.1.3": {
+        "type": "package",
+        "dependencies": {
+          "BlazorJS": "2.1.6",
+          "Nextended.Blazor": "7.0.38",
+          "Nextended.Core": "7.0.55",
+          "SixLabors.ImageSharp": "3.1.5",
+          "TagLibSharp": "2.3.0"
+        },
+        "compile": {
+          "lib/net8.0/AuralizeBlazor.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/AuralizeBlazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/AuralizeBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/AuralizeBlazor.props": {}
+        }
+      },
+      "Blazored.FluentValidation/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.9.1",
+          "Microsoft.AspNetCore.Components.Web": "8.0.6"
+        },
+        "compile": {
+          "lib/net8.0/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Blazored.FluentValidation.dll": {}
+        }
+      },
+      "BlazorJS/2.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.1",
+          "Microsoft.Extensions.FileProviders.Embedded": "8.0.1",
+          "Microsoft.JSInterop": "8.0.1"
+        },
+        "compile": {
+          "lib/net8.0/BlazorJS.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/BlazorJS.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorJS.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorJS.props": {}
+        }
+      },
+      "BlazorParameterCastingMagic/1.2.23060811": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.13",
+          "Nextended.Core": "7.0.23"
+        },
+        "compile": {
+          "lib/net6.0/BlazorParameterCastingMagic.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/BlazorParameterCastingMagic.dll": {}
+        }
+      },
+      "BuildBundlerMinifier/3.2.449": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "ExcelDataReader/3.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/ExcelDataReader.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ExcelDataReader.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "ExcelDataReader.DataSet/3.7.0": {
+        "type": "package",
+        "dependencies": {
+          "ExcelDataReader": "3.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/ExcelDataReader.DataSet.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ExcelDataReader.DataSet.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "FluentValidation/11.9.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {}
+        }
+      },
+      "Markdig/0.37.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Markdig.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Markdig.dll": {}
+        }
+      },
+      "MetadataExtractor/2.8.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.5.1",
+          "XmpCore": "6.1.10.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/MetadataExtractor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MetadataExtractor.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.8": {
         "type": "package",
         "dependencies": {
@@ -98,6 +232,73 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Net.Http.Headers": "2.2.0",
+          "System.Buffers": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Metadata/8.0.8": {
         "type": "package",
         "compile": {
@@ -105,6 +306,31 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.StaticFiles/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.WebEncoders": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Configuration/8.0.0": {
@@ -233,6 +459,24 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.FileProviders.Embedded/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        }
+      },
       "Microsoft.Extensions.FileProviders.Physical/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -260,6 +504,21 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Localization/8.0.8": {
@@ -346,6 +605,20 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.WebEncoders/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
+        }
+      },
       "Microsoft.JSInterop/8.0.8": {
         "type": "package",
         "compile": {
@@ -365,6 +638,28 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.JSInterop.WebAssembly.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Headers/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0",
+          "System.Buffers": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
         }
       },
       "MudBlazor/7.8.0": {
@@ -388,6 +683,178 @@
           "buildMultiTargeting/MudBlazor.props": {}
         }
       },
+      "MudBlazor.Extensions/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "AuralizeBlazor": "1.1.3",
+          "BlazorJS": "2.1.6",
+          "BlazorParameterCastingMagic": "1.2.23060811",
+          "Blazored.FluentValidation": "2.2.0",
+          "BuildBundlerMinifier": "3.2.449",
+          "ExcelDataReader": "3.7.0",
+          "ExcelDataReader.DataSet": "3.7.0",
+          "MetadataExtractor": "2.8.1",
+          "Microsoft.AspNetCore.StaticFiles": "2.2.0",
+          "MudBlazor": "7.8.0",
+          "MudBlazor.Markdown": "1.0.2",
+          "Nextended.Blazor": "7.0.38",
+          "Nextended.Core": "7.0.55",
+          "OneOf": "3.0.271",
+          "SharpCompress": "0.37.2",
+          "SixLabors.ImageSharp": "3.1.5"
+        },
+        "compile": {
+          "lib/net8.0/MudBlazor.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/MudBlazor.Extensions.dll": {}
+        },
+        "build": {
+          "buildTransitive/MudBlazor.Extensions.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.Extensions.props": {}
+        }
+      },
+      "MudBlazor.Markdown/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Markdig": "0.37.0",
+          "MudBlazor": "6.20.0"
+        },
+        "compile": {
+          "lib/net8.0/MudBlazor.Markdown.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/MudBlazor.Markdown.dll": {}
+        },
+        "build": {
+          "buildTransitive/MudBlazor.Markdown.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.Markdown.props": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Nextended.Blazor/7.0.38": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "7.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.0",
+          "Nextended.Core": "7.0.38"
+        },
+        "compile": {
+          "lib/net7.0/Nextended.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Nextended.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Nextended.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Nextended.Blazor.props": {}
+        }
+      },
+      "Nextended.Core/7.0.55": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "System.Management": "7.0.0",
+          "System.Reflection.Emit": "4.7.0",
+          "YamlDotNet": "13.3.1"
+        },
+        "compile": {
+          "lib/net7.0/Nextended.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Nextended.Core.dll": {}
+        }
+      },
+      "OneOf/3.0.271": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        }
+      },
+      "SharpCompress/0.37.2": {
+        "type": "package",
+        "dependencies": {
+          "ZstdSharp.Port": "0.8.0"
+        },
+        "compile": {
+          "lib/net8.0/SharpCompress.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SharpCompress.dll": {}
+        }
+      },
+      "SixLabors.ImageSharp/3.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.Buffers/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/System.CodeDom.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        }
+      },
       "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
@@ -398,6 +865,64 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.Management.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Text.Encodings.Web/8.0.0": {
@@ -433,6 +958,46 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "TagLibSharp/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/TagLibSharp.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/TagLibSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "XmpCore/6.1.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XmpCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XmpCore.dll": {}
+        }
+      },
+      "YamlDotNet/13.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/YamlDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/YamlDotNet.dll": {}
+        }
+      },
+      "ZstdSharp.Port/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ZstdSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ZstdSharp.dll": {}
+        }
+      },
       "MyApplication.Client/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -450,6 +1015,209 @@
     }
   },
   "libraries": {
+    "AuralizeBlazor/1.1.3": {
+      "sha512": "jn4QvAjScgI2U3Y44pEeF0fENg5JbqRPa4j5MVqpi9qFAb04QOHkSP+2F4jHCJ9VnbFVcJ/9fvhg6abkjKM18A==",
+      "type": "package",
+      "path": "auralizeblazor/1.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "auralizeblazor.1.1.3.nupkg.sha512",
+        "auralizeblazor.nuspec",
+        "build/AuralizeBlazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/AuralizeBlazor.props",
+        "buildTransitive/AuralizeBlazor.props",
+        "lib/net6.0/AuralizeBlazor.dll",
+        "lib/net7.0/AuralizeBlazor.dll",
+        "lib/net8.0/AuralizeBlazor.dll",
+        "staticwebassets/AuralizeBlazor.bundle.scp.css",
+        "staticwebassets/docs/AuralizeBlazor.xml",
+        "staticwebassets/js/auralize.min.js",
+        "staticwebassets/js/components/auralizer.js",
+        "staticwebassets/js/features/energyMeterFeature.js",
+        "staticwebassets/js/features/radialRadiusFeature.js",
+        "staticwebassets/js/features/showLogoFeature.js",
+        "staticwebassets/js/features/switchPresetFeature.js",
+        "staticwebassets/js/features/waveNodeFeature.js",
+        "staticwebassets/js/lib/audioMotion4.4.0.min.js"
+      ]
+    },
+    "Blazored.FluentValidation/2.2.0": {
+      "sha512": "lBSHW7faCJqwn7KtZt6vqHSiyGvTL5McpS4sQUW3RLu2R5eMmf4oolFeufZfcAB8TV8iI+/PYouz7sn773E8Og==",
+      "type": "package",
+      "path": "blazored.fluentvalidation/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.fluentvalidation.2.2.0.nupkg.sha512",
+        "blazored.fluentvalidation.nuspec",
+        "icon.png",
+        "lib/net6.0/Blazored.FluentValidation.dll",
+        "lib/net7.0/Blazored.FluentValidation.dll",
+        "lib/net8.0/Blazored.FluentValidation.dll"
+      ]
+    },
+    "BlazorJS/2.1.6": {
+      "sha512": "l+6KmM0PRBVETETZDm6+DidRtu9L9ellhCS/xXoeYUiTEZ2vaVbsVkkIpYSYMMm1i45TvyMaGAeBjKBnwIVLWQ==",
+      "type": "package",
+      "path": "blazorjs/2.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "blazorjs.2.1.6.nupkg.sha512",
+        "blazorjs.nuspec",
+        "build/BlazorJS.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorJS.props",
+        "buildTransitive/BlazorJS.props",
+        "lib/net6.0/BlazorJS.dll",
+        "lib/net7.0/BlazorJS.dll",
+        "lib/net8.0/BlazorJS.dll",
+        "lib/netstandard2.1/BlazorJS.dll",
+        "staticwebassets/BlazorJS.lib.browserDetect.js",
+        "staticwebassets/BlazorJS.lib.eventHelper.js",
+        "staticwebassets/BlazorJS.lib.module.js"
+      ]
+    },
+    "BlazorParameterCastingMagic/1.2.23060811": {
+      "sha512": "zRs1kYYyC/60EUv9Vc1bhCGozuKb5mlATijo8CrzxrT8xq3Wo2NOzOtUauxx7QHEsYWwQLNc9E56U7OOTy7bVw==",
+      "type": "package",
+      "path": "blazorparametercastingmagic/1.2.23060811",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "blazorparametercastingmagic.1.2.23060811.nupkg.sha512",
+        "blazorparametercastingmagic.nuspec",
+        "lib/net6.0/BlazorParameterCastingMagic.dll",
+        "main.png"
+      ]
+    },
+    "BuildBundlerMinifier/3.2.449": {
+      "sha512": "uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
+      "type": "package",
+      "path": "buildbundlerminifier/3.2.449",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/BuildBundlerMinifier.targets",
+        "buildbundlerminifier.3.2.449.nupkg.sha512",
+        "buildbundlerminifier.nuspec",
+        "tools/net46/BundlerMinifier.dll",
+        "tools/net46/NUglify.dll",
+        "tools/net46/Newtonsoft.Json.dll",
+        "tools/netcoreapp2.0/BundlerMinifier.dll",
+        "tools/netcoreapp2.0/NUglify.dll",
+        "tools/netcoreapp2.0/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.0/BundlerMinifier.dll",
+        "tools/netcoreapp3.0/NUglify.dll",
+        "tools/netcoreapp3.0/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.1/BundlerMinifier.dll",
+        "tools/netcoreapp3.1/NUglify.dll",
+        "tools/netcoreapp3.1/Newtonsoft.Json.dll",
+        "tools/netstandard1.3/BundlerMinifier.dll",
+        "tools/netstandard1.3/NUglify.dll",
+        "tools/netstandard1.3/Newtonsoft.Json.dll"
+      ]
+    },
+    "ExcelDataReader/3.7.0": {
+      "sha512": "AMv3oDETRHSRyXC17rBtKH45qIfFyo433LMeaMB3u4RNr/c9Luuc0Z+JMP6+3Cx9n4wXqFqcrEIVxrf/GgYnZg==",
+      "type": "package",
+      "path": "exceldatareader/3.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.3.7.0.nupkg.sha512",
+        "exceldatareader.nuspec",
+        "lib/net462/ExcelDataReader.dll",
+        "lib/net462/ExcelDataReader.pdb",
+        "lib/netstandard2.0/ExcelDataReader.dll",
+        "lib/netstandard2.0/ExcelDataReader.pdb",
+        "lib/netstandard2.1/ExcelDataReader.dll",
+        "lib/netstandard2.1/ExcelDataReader.pdb"
+      ]
+    },
+    "ExcelDataReader.DataSet/3.7.0": {
+      "sha512": "zA2/CVzbMspkNg0qf0/Zp+eU6VxYP5PtiJSErLDP46d/Y7F6of/NCcSGeXjs97KDq7UiEf6XJe+89s/92n2GYg==",
+      "type": "package",
+      "path": "exceldatareader.dataset/3.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.dataset.3.7.0.nupkg.sha512",
+        "exceldatareader.dataset.nuspec",
+        "lib/net462/ExcelDataReader.DataSet.dll",
+        "lib/net462/ExcelDataReader.DataSet.pdb",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.pdb",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.pdb"
+      ]
+    },
+    "FluentValidation/11.9.1": {
+      "sha512": "C+PqISSMdlOZZJx0Hx25atW32tv4vbpsaiQB+PLjK+ZGLzOFuHl1fUJ3Lny77mIZ31ZtYtNG0JgUjxa3wwLsWg==",
+      "type": "package",
+      "path": "fluentvalidation/11.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.9.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.dll"
+      ]
+    },
+    "Markdig/0.37.0": {
+      "sha512": "biiu4MTPFjW55qw6v5Aphtj0MjDLJ14x8ndZwkJUHIeqvaSGKeqhLY7S7Vu/S3k7/c9KwhhnaCDP9hdFNUhcNA==",
+      "type": "package",
+      "path": "markdig/0.37.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Markdig.dll",
+        "lib/net6.0/Markdig.dll",
+        "lib/net8.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.1/Markdig.dll",
+        "markdig.0.37.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png",
+        "readme.md"
+      ]
+    },
+    "MetadataExtractor/2.8.1": {
+      "sha512": "5VFc1urVZiIjB6zZ4nUkqDJntGPGPgPIrSqRtkAZ1AFDKHmxbRSHL3zZi9qMd8JYtOu/T8d5rZ7740jj/+dHOg==",
+      "type": "package",
+      "path": "metadataextractor/2.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net35/MetadataExtractor.dll",
+        "lib/net45/MetadataExtractor.dll",
+        "lib/netstandard1.3/MetadataExtractor.dll",
+        "lib/netstandard2.0/MetadataExtractor.dll",
+        "metadata-extractor-logo-128.png",
+        "metadataextractor.2.8.1.nupkg.sha512",
+        "metadataextractor.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/8.0.8": {
       "sha512": "e+ehkJTx0bqUb9zzM9ohV830LhoK3fy5lfVGPWAozbq6I2rJpyq7L0OUgEGNEQLMTzawkDjpNlJ4WU1ck/TDjw==",
       "type": "package",
@@ -567,6 +1335,66 @@
         "tools/BlazorDebugProxy/Newtonsoft.Json.dll"
       ]
     },
+    "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+      "sha512": "ubycklv+ZY7Kutdwuy1W4upWcZ6VFR8WUXU7l7B2+mvbDBBPAcfpi+E+Y5GFe+Q157YfA3C49D2GCjAZc7Mobw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.hosting.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.hosting.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
+      "sha512": "1PMijw8RMtuQF60SsD/JlKtVfvh4NORAhF4wjysdABhlhTrYmtgssqyncR0Stq5vqtjplZcj6kbT4LRTglt9IQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.hosting.server.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
+      "sha512": "2DgZ9rWrJtuR7RYiew01nGRzuQBDaGHGmK56Rk54vsLLsCdzuFUPqbDTJCS1qJQWTbmbIQ9wGIOjpxA1t0l7/w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.extensions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.extensions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Metadata/8.0.8": {
       "sha512": "4WSCv7ddawjabLZ7hj0Ai7hTzFYLw5PsvHVKrJkuBgrv+blELbIDMVj7b5q7PZs7Xvz0W0ViKY/rcVkqD0D5yQ==",
       "type": "package",
@@ -581,6 +1409,65 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "microsoft.aspnetcore.metadata.8.0.8.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.StaticFiles/2.2.0": {
+      "sha512": "byZDrjir6Co5EoWbraQyG0qbPCUG6XgGYQstipMF9lucOAjq/mqnIyt8B8iMWnin/ghZoOln9Y01af4rUAwOhA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.staticfiles/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll",
+        "microsoft.aspnetcore.staticfiles.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.staticfiles.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
@@ -796,6 +1683,26 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.FileProviders.Embedded/8.0.1": {
+      "sha512": "kZzZXb13F0XtH5YDb4JmwyKtMfmhwIRplFLYct7uRbZYzQbfVGtWgjN2Nv2k/NpODRyaYPXFl03JuD70KWcHjQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.embedded/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.props",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "lib/net462/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "microsoft.extensions.fileproviders.embedded.8.0.1.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.nuspec",
+        "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
+      ]
+    },
     "Microsoft.Extensions.FileProviders.Physical/8.0.0": {
       "sha512": "UboiXxpPUpwulHvIAVE36Knq0VSHaAmfrFkegLyBZeaADuKezJ/AIXYAW8F5GBlGk/VaibN2k/Zn1ca8YAfVdA==",
       "type": "package",
@@ -844,6 +1751,18 @@
         "microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
         "microsoft.extensions.filesystemglobbing.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
+      "sha512": "+k4AEn68HOJat5gj1TWa6X28WlirNQO9sPIIeQbia+91n03esEtMSSoekSTpMjUzjqtJWQN3McVx0GvSPFHF/Q==",
+      "type": "package",
+      "path": "microsoft.extensions.hosting.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.hosting.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Localization/8.0.8": {
@@ -1038,6 +1957,18 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.WebEncoders/2.2.0": {
+      "sha512": "V8XcqYcpcdBAxUhLeyYcuKmxu4CtNQA9IphTnARpQGhkop4A93v2XgM3AtaVVJo3H2cDWxWM6aeO8HxkifREqw==",
+      "type": "package",
+      "path": "microsoft.extensions.webencoders/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll",
+        "microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
+        "microsoft.extensions.webencoders.nuspec"
+      ]
+    },
     "Microsoft.JSInterop/8.0.8": {
       "sha512": "vJhGdkYKvytLIMi5J2vpsyfjPKzSm7dnCfdGwjt4skvJcomlJyKDTA3wAwxIMuMbiWcOi1HuiQ6R+85C+qFJrw==",
       "type": "package",
@@ -1066,6 +1997,35 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
+    "Microsoft.Net.Http.Headers/2.2.0": {
+      "sha512": "iZNkjYqlo8sIOI0bQfpsSoMTmB/kyvmV2h225ihyZT33aTp48ZpF6qYnXxzSXmHt8DpBAwBTX+1s1UFLbYfZKg==",
+      "type": "package",
+      "path": "microsoft.net.http.headers/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
+        "microsoft.net.http.headers.2.2.0.nupkg.sha512",
+        "microsoft.net.http.headers.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.1.2": {
+      "sha512": "mOJy3M0UN+LUG21dLGMxaWZEP6xYpQEpLuvuEQBaownaX4YuhH6NmNUlN9si+vNkAS6dwJ//N1O4DmLf2CikVg==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "MudBlazor/7.8.0": {
       "sha512": "DivLaZKVkL4z8jVeqa1P2n3u5Dny8l/K1nCLrzp8hI+efdE2Rd1KDkMqoaGdjgV9jCEJ3D35r1+/w6V4yPzuaw==",
       "type": "package",
@@ -1090,6 +2050,630 @@
         "staticwebassets/MudBlazor.min.js"
       ]
     },
+    "MudBlazor.Extensions/2.0.5": {
+      "sha512": "zZe51vKVaQ4FJA/WValu2xQk68UUQbUfQ3Mb8nZHnfx72YuyWWfLuQ1pgr8RHKdoe5vI45MtnO7l2wIrt6s7Sw==",
+      "type": "package",
+      "path": "mudblazor.extensions/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "MudExtension.png",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/MudBlazor.Extensions.props",
+        "buildMultiTargeting/MudBlazor.Extensions.props",
+        "buildTransitive/MudBlazor.Extensions.props",
+        "lib/net7.0/MudBlazor.Extensions.dll",
+        "lib/net8.0/MudBlazor.Extensions.dll",
+        "mudblazor.extensions.2.0.5.nupkg.sha512",
+        "mudblazor.extensions.nuspec",
+        "staticwebassets/MudBlazor.Extensions.lib.module.js",
+        "staticwebassets/MudBlazor.Extensions.lib.module.min.js",
+        "staticwebassets/background.png",
+        "staticwebassets/css/_backgrounds.scss",
+        "staticwebassets/css/_dialog.scss",
+        "staticwebassets/css/animations/_back.scss",
+        "staticwebassets/css/animations/_bounce.scss",
+        "staticwebassets/css/animations/_fade.scss",
+        "staticwebassets/css/animations/_flash.scss",
+        "staticwebassets/css/animations/_flip.scss",
+        "staticwebassets/css/animations/_headshake.scss",
+        "staticwebassets/css/animations/_heartbeat.scss",
+        "staticwebassets/css/animations/_hinge.scss",
+        "staticwebassets/css/animations/_jack.scss",
+        "staticwebassets/css/animations/_jello.scss",
+        "staticwebassets/css/animations/_key_frames.scss",
+        "staticwebassets/css/animations/_lightSpeed.scss",
+        "staticwebassets/css/animations/_perspective.scss",
+        "staticwebassets/css/animations/_pulse.scss",
+        "staticwebassets/css/animations/_roll.scss",
+        "staticwebassets/css/animations/_rotate.scss",
+        "staticwebassets/css/animations/_rubberband.scss",
+        "staticwebassets/css/animations/_slide.scss",
+        "staticwebassets/css/animations/_swing.scss",
+        "staticwebassets/css/animations/_tada.scss",
+        "staticwebassets/css/animations/_wobble.scss",
+        "staticwebassets/css/animations/_zoom.scss",
+        "staticwebassets/css/animations/index.scss",
+        "staticwebassets/css/components/_card-list.scss",
+        "staticwebassets/css/components/_chip-select.scss",
+        "staticwebassets/css/components/_code-view.scss",
+        "staticwebassets/css/components/_file-display.scss",
+        "staticwebassets/css/components/_grid.scss",
+        "staticwebassets/css/components/_mudexcolorbubble.scss",
+        "staticwebassets/css/components/_mudexiconpicker.scss",
+        "staticwebassets/css/components/_mudexsplitcontainer.scss",
+        "staticwebassets/css/components/_object-edit.scss",
+        "staticwebassets/css/components/_select.scss",
+        "staticwebassets/css/components/_taskbar.scss",
+        "staticwebassets/css/components/_upload-edit.scss",
+        "staticwebassets/css/components/index.scss",
+        "staticwebassets/css/index.scss",
+        "staticwebassets/css/misc/_tests.scss",
+        "staticwebassets/css/misc/index.scss",
+        "staticwebassets/css/mixins.scss",
+        "staticwebassets/css/mudExAppLoader.css",
+        "staticwebassets/css/mudExAppLoader.min.css",
+        "staticwebassets/css/mudExAppLoader.scss",
+        "staticwebassets/docs/MudBlazor.Extensions.xml",
+        "staticwebassets/js/components/MoveContent.js",
+        "staticwebassets/js/components/MoveContent.min.js",
+        "staticwebassets/js/components/MudExAppLoader.js",
+        "staticwebassets/js/components/MudExAppLoader.min.js",
+        "staticwebassets/js/components/MudExCardList.js",
+        "staticwebassets/js/components/MudExCardList.min.js",
+        "staticwebassets/js/components/MudExColorBubble.js",
+        "staticwebassets/js/components/MudExColorBubble.min.js",
+        "staticwebassets/js/components/MudExDropBoxFilePicker.js",
+        "staticwebassets/js/components/MudExDropBoxFilePicker.min.js",
+        "staticwebassets/js/components/MudExExternalFilePickerBase.js",
+        "staticwebassets/js/components/MudExExternalFilePickerBase.min.js",
+        "staticwebassets/js/components/MudExFileDisplay.js",
+        "staticwebassets/js/components/MudExFileDisplay.min.js",
+        "staticwebassets/js/components/MudExGoogleFilePicker.js",
+        "staticwebassets/js/components/MudExGoogleFilePicker.min.js",
+        "staticwebassets/js/components/MudExImageViewer.js",
+        "staticwebassets/js/components/MudExImageViewer.min.js",
+        "staticwebassets/js/components/MudExOneDriveFilePicker.js",
+        "staticwebassets/js/components/MudExOneDriveFilePicker.min.js",
+        "staticwebassets/js/components/MudExSplitter.js",
+        "staticwebassets/js/components/MudExSplitter.min.js",
+        "staticwebassets/js/components/MudExUploadEdit.js",
+        "staticwebassets/js/components/MudExUploadEdit.min.js",
+        "staticwebassets/js/libs/MudExImageView.min.js",
+        "staticwebassets/js/libs/audioMotion-analyzer.min.js",
+        "staticwebassets/js/mudBlazorExtensions.all.js",
+        "staticwebassets/js/mudBlazorExtensions.all.min.js",
+        "staticwebassets/js/mudBlazorExtensions.js",
+        "staticwebassets/js/utils/colorHelper.js",
+        "staticwebassets/js/utils/cssHelper.js",
+        "staticwebassets/js/utils/dialogExt/baseDialogExtensionHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogAnimationHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogButtonHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogDragHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogFinder.js",
+        "staticwebassets/js/utils/dialogExt/dialogHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogNoModalHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogPositionHandler.js",
+        "staticwebassets/js/utils/dialogExt/dialogResizeHandler.js",
+        "staticwebassets/js/utils/domHelper.js",
+        "staticwebassets/js/utils/eventHelper.js",
+        "staticwebassets/js/utils/number.js",
+        "staticwebassets/js/utils/speechRecognition.js",
+        "staticwebassets/js/utils/uriHelper.js",
+        "staticwebassets/mudBlazorExtensions.css",
+        "staticwebassets/mudBlazorExtensions.min.css",
+        "staticwebassets/mudBlazorExtensions.scss",
+        "staticwebassets/styles.css"
+      ]
+    },
+    "MudBlazor.Markdown/1.0.2": {
+      "sha512": "yXEuF1XTtZy0XkxDVXj9Jd8chwsNwu1IaDpb7FsbZWU8sMg1zCk+GXZdTSKH+C0blHJEDEOl5bzp3JU1S/737w==",
+      "type": "package",
+      "path": "mudblazor.markdown/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/MudBlazor.Markdown.props",
+        "buildMultiTargeting/MudBlazor.Markdown.props",
+        "buildTransitive/MudBlazor.Markdown.props",
+        "favico.png",
+        "lib/net6.0/MudBlazor.Markdown.dll",
+        "lib/net7.0/MudBlazor.Markdown.dll",
+        "lib/net8.0/MudBlazor.Markdown.dll",
+        "mudblazor.markdown.1.0.2.nupkg.sha512",
+        "mudblazor.markdown.nuspec",
+        "staticwebassets/MudBlazor.Markdown.MathJax.min.js",
+        "staticwebassets/MudBlazor.Markdown.min.css",
+        "staticwebassets/MudBlazor.Markdown.min.js",
+        "staticwebassets/code-styles/a11y-dark.min.css",
+        "staticwebassets/code-styles/a11y-light.min.css",
+        "staticwebassets/code-styles/agate.min.css",
+        "staticwebassets/code-styles/an-old-hope.min.css",
+        "staticwebassets/code-styles/androidstudio.min.css",
+        "staticwebassets/code-styles/arduino-light.min.css",
+        "staticwebassets/code-styles/arta.min.css",
+        "staticwebassets/code-styles/ascetic.min.css",
+        "staticwebassets/code-styles/atom-one-dark-reasonable.min.css",
+        "staticwebassets/code-styles/atom-one-dark.min.css",
+        "staticwebassets/code-styles/atom-one-light.min.css",
+        "staticwebassets/code-styles/base16/apathy.min.css",
+        "staticwebassets/code-styles/base16/apprentice.min.css",
+        "staticwebassets/code-styles/base16/ashes.min.css",
+        "staticwebassets/code-styles/base16/atelier-cave-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-cave.min.css",
+        "staticwebassets/code-styles/base16/atelier-dune-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-dune.min.css",
+        "staticwebassets/code-styles/base16/atelier-estuary-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-estuary.min.css",
+        "staticwebassets/code-styles/base16/atelier-forest-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-forest.min.css",
+        "staticwebassets/code-styles/base16/atelier-heath-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-heath.min.css",
+        "staticwebassets/code-styles/base16/atelier-lakeside-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-lakeside.min.css",
+        "staticwebassets/code-styles/base16/atelier-plateau-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-plateau.min.css",
+        "staticwebassets/code-styles/base16/atelier-savanna-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-savanna.min.css",
+        "staticwebassets/code-styles/base16/atelier-seaside-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-seaside.min.css",
+        "staticwebassets/code-styles/base16/atelier-sulphurpool-light.min.css",
+        "staticwebassets/code-styles/base16/atelier-sulphurpool.min.css",
+        "staticwebassets/code-styles/base16/atlas.min.css",
+        "staticwebassets/code-styles/base16/bespin.min.css",
+        "staticwebassets/code-styles/base16/black-metal-bathory.min.css",
+        "staticwebassets/code-styles/base16/black-metal-burzum.min.css",
+        "staticwebassets/code-styles/base16/black-metal-dark-funeral.min.css",
+        "staticwebassets/code-styles/base16/black-metal-gorgoroth.min.css",
+        "staticwebassets/code-styles/base16/black-metal-immortal.min.css",
+        "staticwebassets/code-styles/base16/black-metal-khold.min.css",
+        "staticwebassets/code-styles/base16/black-metal-marduk.min.css",
+        "staticwebassets/code-styles/base16/black-metal-mayhem.min.css",
+        "staticwebassets/code-styles/base16/black-metal-nile.min.css",
+        "staticwebassets/code-styles/base16/black-metal-venom.min.css",
+        "staticwebassets/code-styles/base16/black-metal.min.css",
+        "staticwebassets/code-styles/base16/brewer.min.css",
+        "staticwebassets/code-styles/base16/bright.min.css",
+        "staticwebassets/code-styles/base16/brogrammer.min.css",
+        "staticwebassets/code-styles/base16/brush-trees-dark.min.css",
+        "staticwebassets/code-styles/base16/brush-trees.min.css",
+        "staticwebassets/code-styles/base16/chalk.min.css",
+        "staticwebassets/code-styles/base16/circus.min.css",
+        "staticwebassets/code-styles/base16/classic-dark.min.css",
+        "staticwebassets/code-styles/base16/classic-light.min.css",
+        "staticwebassets/code-styles/base16/codeschool.min.css",
+        "staticwebassets/code-styles/base16/colors.min.css",
+        "staticwebassets/code-styles/base16/cupcake.min.css",
+        "staticwebassets/code-styles/base16/cupertino.min.css",
+        "staticwebassets/code-styles/base16/danqing.min.css",
+        "staticwebassets/code-styles/base16/darcula.min.css",
+        "staticwebassets/code-styles/base16/dark-violet.min.css",
+        "staticwebassets/code-styles/base16/darkmoss.min.css",
+        "staticwebassets/code-styles/base16/darktooth.min.css",
+        "staticwebassets/code-styles/base16/decaf.min.css",
+        "staticwebassets/code-styles/base16/default-dark.min.css",
+        "staticwebassets/code-styles/base16/default-light.min.css",
+        "staticwebassets/code-styles/base16/dirtysea.min.css",
+        "staticwebassets/code-styles/base16/dracula.min.css",
+        "staticwebassets/code-styles/base16/edge-dark.min.css",
+        "staticwebassets/code-styles/base16/edge-light.min.css",
+        "staticwebassets/code-styles/base16/eighties.min.css",
+        "staticwebassets/code-styles/base16/embers.min.css",
+        "staticwebassets/code-styles/base16/equilibrium-dark.min.css",
+        "staticwebassets/code-styles/base16/equilibrium-gray-dark.min.css",
+        "staticwebassets/code-styles/base16/equilibrium-gray-light.min.css",
+        "staticwebassets/code-styles/base16/equilibrium-light.min.css",
+        "staticwebassets/code-styles/base16/espresso.min.css",
+        "staticwebassets/code-styles/base16/eva-dim.min.css",
+        "staticwebassets/code-styles/base16/eva.min.css",
+        "staticwebassets/code-styles/base16/flat.min.css",
+        "staticwebassets/code-styles/base16/framer.min.css",
+        "staticwebassets/code-styles/base16/fruit-soda.min.css",
+        "staticwebassets/code-styles/base16/gigavolt.min.css",
+        "staticwebassets/code-styles/base16/github.min.css",
+        "staticwebassets/code-styles/base16/google-dark.min.css",
+        "staticwebassets/code-styles/base16/google-light.min.css",
+        "staticwebassets/code-styles/base16/grayscale-dark.min.css",
+        "staticwebassets/code-styles/base16/grayscale-light.min.css",
+        "staticwebassets/code-styles/base16/green-screen.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-dark-hard.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-dark-medium.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-dark-pale.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-dark-soft.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-light-hard.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-light-medium.min.css",
+        "staticwebassets/code-styles/base16/gruvbox-light-soft.min.css",
+        "staticwebassets/code-styles/base16/hardcore.min.css",
+        "staticwebassets/code-styles/base16/harmonic16-dark.min.css",
+        "staticwebassets/code-styles/base16/harmonic16-light.min.css",
+        "staticwebassets/code-styles/base16/heetch-dark.min.css",
+        "staticwebassets/code-styles/base16/heetch-light.min.css",
+        "staticwebassets/code-styles/base16/helios.min.css",
+        "staticwebassets/code-styles/base16/hopscotch.min.css",
+        "staticwebassets/code-styles/base16/horizon-dark.min.css",
+        "staticwebassets/code-styles/base16/horizon-light.min.css",
+        "staticwebassets/code-styles/base16/humanoid-dark.min.css",
+        "staticwebassets/code-styles/base16/humanoid-light.min.css",
+        "staticwebassets/code-styles/base16/ia-dark.min.css",
+        "staticwebassets/code-styles/base16/ia-light.min.css",
+        "staticwebassets/code-styles/base16/icy-dark.min.css",
+        "staticwebassets/code-styles/base16/ir-black.min.css",
+        "staticwebassets/code-styles/base16/isotope.min.css",
+        "staticwebassets/code-styles/base16/kimber.min.css",
+        "staticwebassets/code-styles/base16/london-tube.min.css",
+        "staticwebassets/code-styles/base16/macintosh.min.css",
+        "staticwebassets/code-styles/base16/marrakesh.min.css",
+        "staticwebassets/code-styles/base16/materia.min.css",
+        "staticwebassets/code-styles/base16/material-darker.min.css",
+        "staticwebassets/code-styles/base16/material-lighter.min.css",
+        "staticwebassets/code-styles/base16/material-palenight.min.css",
+        "staticwebassets/code-styles/base16/material-vivid.min.css",
+        "staticwebassets/code-styles/base16/material.min.css",
+        "staticwebassets/code-styles/base16/mellow-purple.min.css",
+        "staticwebassets/code-styles/base16/mexico-light.min.css",
+        "staticwebassets/code-styles/base16/mocha.min.css",
+        "staticwebassets/code-styles/base16/monokai.min.css",
+        "staticwebassets/code-styles/base16/nebula.min.css",
+        "staticwebassets/code-styles/base16/nord.min.css",
+        "staticwebassets/code-styles/base16/nova.min.css",
+        "staticwebassets/code-styles/base16/ocean.min.css",
+        "staticwebassets/code-styles/base16/oceanicnext.min.css",
+        "staticwebassets/code-styles/base16/one-light.min.css",
+        "staticwebassets/code-styles/base16/onedark.min.css",
+        "staticwebassets/code-styles/base16/outrun-dark.min.css",
+        "staticwebassets/code-styles/base16/papercolor-dark.min.css",
+        "staticwebassets/code-styles/base16/papercolor-light.min.css",
+        "staticwebassets/code-styles/base16/paraiso.min.css",
+        "staticwebassets/code-styles/base16/pasque.min.css",
+        "staticwebassets/code-styles/base16/phd.min.css",
+        "staticwebassets/code-styles/base16/pico.min.css",
+        "staticwebassets/code-styles/base16/pop.min.css",
+        "staticwebassets/code-styles/base16/porple.min.css",
+        "staticwebassets/code-styles/base16/qualia.min.css",
+        "staticwebassets/code-styles/base16/railscasts.min.css",
+        "staticwebassets/code-styles/base16/rebecca.min.css",
+        "staticwebassets/code-styles/base16/ros-pine-dawn.min.css",
+        "staticwebassets/code-styles/base16/ros-pine-moon.min.css",
+        "staticwebassets/code-styles/base16/ros-pine.min.css",
+        "staticwebassets/code-styles/base16/sagelight.min.css",
+        "staticwebassets/code-styles/base16/sandcastle.min.css",
+        "staticwebassets/code-styles/base16/seti-ui.min.css",
+        "staticwebassets/code-styles/base16/shapeshifter.min.css",
+        "staticwebassets/code-styles/base16/silk-dark.min.css",
+        "staticwebassets/code-styles/base16/silk-light.min.css",
+        "staticwebassets/code-styles/base16/snazzy.min.css",
+        "staticwebassets/code-styles/base16/solar-flare-light.min.css",
+        "staticwebassets/code-styles/base16/solar-flare.min.css",
+        "staticwebassets/code-styles/base16/solarized-dark.min.css",
+        "staticwebassets/code-styles/base16/solarized-light.min.css",
+        "staticwebassets/code-styles/base16/spacemacs.min.css",
+        "staticwebassets/code-styles/base16/summercamp.min.css",
+        "staticwebassets/code-styles/base16/summerfruit-dark.min.css",
+        "staticwebassets/code-styles/base16/summerfruit-light.min.css",
+        "staticwebassets/code-styles/base16/synth-midnight-terminal-dark.min.css",
+        "staticwebassets/code-styles/base16/synth-midnight-terminal-light.min.css",
+        "staticwebassets/code-styles/base16/t3024.min.css",
+        "staticwebassets/code-styles/base16/tango.min.css",
+        "staticwebassets/code-styles/base16/tender.min.css",
+        "staticwebassets/code-styles/base16/tomorrow-night.min.css",
+        "staticwebassets/code-styles/base16/tomorrow.min.css",
+        "staticwebassets/code-styles/base16/twilight.min.css",
+        "staticwebassets/code-styles/base16/unikitty-dark.min.css",
+        "staticwebassets/code-styles/base16/unikitty-light.min.css",
+        "staticwebassets/code-styles/base16/vulcan.min.css",
+        "staticwebassets/code-styles/base16/windows-10-light.min.css",
+        "staticwebassets/code-styles/base16/windows-10.min.css",
+        "staticwebassets/code-styles/base16/windows-95-light.min.css",
+        "staticwebassets/code-styles/base16/windows-95.min.css",
+        "staticwebassets/code-styles/base16/windows-high-contrast-light.min.css",
+        "staticwebassets/code-styles/base16/windows-high-contrast.min.css",
+        "staticwebassets/code-styles/base16/windows-nt-light.min.css",
+        "staticwebassets/code-styles/base16/windows-nt.min.css",
+        "staticwebassets/code-styles/base16/woodland.min.css",
+        "staticwebassets/code-styles/base16/xcode-dusk.min.css",
+        "staticwebassets/code-styles/base16/zenburn.min.css",
+        "staticwebassets/code-styles/brown-paper.min.css",
+        "staticwebassets/code-styles/brown-papersq.png",
+        "staticwebassets/code-styles/codepen-embed.min.css",
+        "staticwebassets/code-styles/color-brewer.min.css",
+        "staticwebassets/code-styles/dark.min.css",
+        "staticwebassets/code-styles/default.min.css",
+        "staticwebassets/code-styles/devibeans.min.css",
+        "staticwebassets/code-styles/docco.min.css",
+        "staticwebassets/code-styles/far.min.css",
+        "staticwebassets/code-styles/foundation.min.css",
+        "staticwebassets/code-styles/github-dark-dimmed.min.css",
+        "staticwebassets/code-styles/github-dark.min.css",
+        "staticwebassets/code-styles/github.min.css",
+        "staticwebassets/code-styles/gml.min.css",
+        "staticwebassets/code-styles/googlecode.min.css",
+        "staticwebassets/code-styles/gradient-dark.min.css",
+        "staticwebassets/code-styles/gradient-light.min.css",
+        "staticwebassets/code-styles/grayscale.min.css",
+        "staticwebassets/code-styles/hybrid.min.css",
+        "staticwebassets/code-styles/idea.min.css",
+        "staticwebassets/code-styles/ir-black.min.css",
+        "staticwebassets/code-styles/isbl-editor-dark.min.css",
+        "staticwebassets/code-styles/isbl-editor-light.min.css",
+        "staticwebassets/code-styles/kimbie-dark.min.css",
+        "staticwebassets/code-styles/kimbie-light.min.css",
+        "staticwebassets/code-styles/lightfair.min.css",
+        "staticwebassets/code-styles/lioshi.min.css",
+        "staticwebassets/code-styles/magula.min.css",
+        "staticwebassets/code-styles/mono-blue.min.css",
+        "staticwebassets/code-styles/monokai-sublime.min.css",
+        "staticwebassets/code-styles/monokai.min.css",
+        "staticwebassets/code-styles/night-owl.min.css",
+        "staticwebassets/code-styles/nnfx-dark.min.css",
+        "staticwebassets/code-styles/nnfx-light.min.css",
+        "staticwebassets/code-styles/nord.min.css",
+        "staticwebassets/code-styles/obsidian.min.css",
+        "staticwebassets/code-styles/paraiso-dark.min.css",
+        "staticwebassets/code-styles/paraiso-light.min.css",
+        "staticwebassets/code-styles/pojoaque.jpg",
+        "staticwebassets/code-styles/pojoaque.min.css",
+        "staticwebassets/code-styles/purebasic.min.css",
+        "staticwebassets/code-styles/qtcreator-dark.min.css",
+        "staticwebassets/code-styles/qtcreator-light.min.css",
+        "staticwebassets/code-styles/rainbow.min.css",
+        "staticwebassets/code-styles/routeros.min.css",
+        "staticwebassets/code-styles/school-book.min.css",
+        "staticwebassets/code-styles/shades-of-purple.min.css",
+        "staticwebassets/code-styles/srcery.min.css",
+        "staticwebassets/code-styles/stackoverflow-dark.min.css",
+        "staticwebassets/code-styles/stackoverflow-light.min.css",
+        "staticwebassets/code-styles/sunburst.min.css",
+        "staticwebassets/code-styles/tomorrow-night-blue.min.css",
+        "staticwebassets/code-styles/tomorrow-night-bright.min.css",
+        "staticwebassets/code-styles/vs.min.css",
+        "staticwebassets/code-styles/vs2015.min.css",
+        "staticwebassets/code-styles/xcode.min.css",
+        "staticwebassets/code-styles/xt256.min.css",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Math-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff",
+        "staticwebassets/output/chtml/fonts/woff-v2/MathJax_Zero.woff"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Nextended.Blazor/7.0.38": {
+      "sha512": "dLQZasZl8o1pUIrmx5p4crCKdjLUh9CEoUFVRkRURE0yEKrb6Bfhcq9vMY2DOnDjliRCj6LZEdX4T7QH+C8Tbw==",
+      "type": "package",
+      "path": "nextended.blazor/7.0.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Nextended.Blazor.props",
+        "buildMultiTargeting/Nextended.Blazor.props",
+        "buildTransitive/Nextended.Blazor.props",
+        "icon.png",
+        "lib/net6.0/Nextended.Blazor.dll",
+        "lib/net7.0/Nextended.Blazor.dll",
+        "nextended.blazor.7.0.38.nupkg.sha512",
+        "nextended.blazor.nuspec",
+        "staticwebassets/Nextended.Blazor.bundle.scp.css",
+        "staticwebassets/background.png",
+        "staticwebassets/exampleJsInterop.js"
+      ]
+    },
+    "Nextended.Core/7.0.55": {
+      "sha512": "mFXdVjJZWZkaSRrQGpC2ZF13NDGzjqIA8y8YU4c9Sw8Wx1Dviwdgze0xUfLXkf5Y5A5c8nt682w50DZtfTJLKw==",
+      "type": "package",
+      "path": "nextended.core/7.0.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net6.0/Nextended.Core.dll",
+        "lib/net7.0/Nextended.Core.dll",
+        "nextended.core.7.0.55.nupkg.sha512",
+        "nextended.core.nuspec"
+      ]
+    },
+    "OneOf/3.0.271": {
+      "sha512": "pqpqeK8xQGggExhr4tesVgJkjdn+9HQAO0QgrYV2hFjE3y90okzk1kQMntMiUOGfV7FrCUfKPaVvPBD4IANqKg==",
+      "type": "package",
+      "path": "oneof/3.0.271",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OneOf.dll",
+        "lib/net45/OneOf.dll",
+        "lib/netstandard1.3/OneOf.dll",
+        "lib/netstandard2.0/OneOf.dll",
+        "oneof.3.0.271.nupkg.sha512",
+        "oneof.nuspec"
+      ]
+    },
+    "SharpCompress/0.37.2": {
+      "sha512": "cFBpTct57aubLQXkdqMmgP8GGTFRh7fnRWP53lgE/EYUpDZJ27SSvTkdjB4OYQRZ20SJFpzczUquKLbt/9xkhw==",
+      "type": "package",
+      "path": "sharpcompress/0.37.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/SharpCompress.dll",
+        "lib/net6.0/SharpCompress.dll",
+        "lib/net8.0/SharpCompress.dll",
+        "lib/netstandard2.0/SharpCompress.dll",
+        "lib/netstandard2.1/SharpCompress.dll",
+        "sharpcompress.0.37.2.nupkg.sha512",
+        "sharpcompress.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/3.1.5": {
+      "sha512": "lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.1.5.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.0": {
+      "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+      "type": "package",
+      "path": "system.buffers/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.CodeDom/7.0.0": {
+      "sha512": "GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "type": "package",
+      "path": "system.codedom/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.CodeDom.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "lib/net462/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net7.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "system.codedom.7.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "type": "package",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net461/System.ComponentModel.Annotations.dll",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "lib/portable-net45+win8/_._",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net461/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "ref/portable-net45+win8/_._",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
+        "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.IO.Pipelines/8.0.0": {
       "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
@@ -1112,6 +2696,127 @@
         "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Management/7.0.0": {
+      "sha512": "A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
+      "type": "package",
+      "path": "system.management/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net7.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/net7.0/System.Management.dll",
+        "runtimes/win/lib/net7.0/System.Management.xml",
+        "system.management.7.0.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "sha512": "VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "type": "package",
+      "path": "system.reflection.emit/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Reflection.Emit.dll",
+        "lib/netstandard1.3/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.dll",
+        "lib/netstandard2.1/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Reflection.Emit.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.dll",
+        "ref/netstandard2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.xml",
+        "system.reflection.emit.4.7.0.nupkg.sha512",
+        "system.reflection.emit.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "sha512": "4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "system.text.encoding.codepages.4.5.1.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Text.Encodings.Web/8.0.0": {
@@ -1212,6 +2917,74 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "TagLibSharp/2.3.0": {
+      "sha512": "Qo4z6ZjnIfbR3Us1Za5M2vQ97OWZPmODvVmepxZ8XW0UIVLGdO2T63/N3b23kCcyiwuIe0TQvMEQG8wUCCD1mA==",
+      "type": "package",
+      "path": "taglibsharp/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/TagLibSharp.dll",
+        "lib/net462/TagLibSharp.pdb",
+        "lib/netstandard2.0/TagLibSharp.dll",
+        "lib/netstandard2.0/TagLibSharp.pdb",
+        "taglibsharp.2.3.0.nupkg.sha512",
+        "taglibsharp.nuspec"
+      ]
+    },
+    "XmpCore/6.1.10.1": {
+      "sha512": "/Tp2/e39e7z8hLtS4TXt0FNNZHbf5yNFfHS0/59soXlgOzZlyRZivvzWpvujyaWkTWWgecp/1nHxkuc5vntn7A==",
+      "type": "package",
+      "path": "xmpcore/6.1.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/XmpCore.dll",
+        "lib/netstandard1.0/XmpCore.dll",
+        "lib/netstandard2.0/XmpCore.dll",
+        "xmpcore.6.1.10.1.nupkg.sha512",
+        "xmpcore.nuspec"
+      ]
+    },
+    "YamlDotNet/13.3.1": {
+      "sha512": "Q2dqDsb0xAlr092grgHk8/vTXI2snIiYM5ND3IXkgJDFIdPnqDYwYnlk+gwzSeRByDLhiSzTog8uT7xFwH68Zg==",
+      "type": "package",
+      "path": "yamldotnet/13.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "images/yamldotnet.png",
+        "lib/net35/YamlDotNet.dll",
+        "lib/net45/YamlDotNet.dll",
+        "lib/net47/YamlDotNet.dll",
+        "lib/net6.0/YamlDotNet.dll",
+        "lib/net7.0/YamlDotNet.dll",
+        "lib/netstandard2.0/YamlDotNet.dll",
+        "lib/netstandard2.1/YamlDotNet.dll",
+        "yamldotnet.13.3.1.nupkg.sha512",
+        "yamldotnet.nuspec"
+      ]
+    },
+    "ZstdSharp.Port/0.8.0": {
+      "sha512": "Z62eNBIu8E8YtbqlMy57tK3dV1+m2b9NhPeaYovB5exmLKvrGCqOhJTzrEUH5VyUWU6vwX3c1XHJGhW5HVs8dA==",
+      "type": "package",
+      "path": "zstdsharp.port/0.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/ZstdSharp.dll",
+        "lib/net5.0/ZstdSharp.dll",
+        "lib/net6.0/ZstdSharp.dll",
+        "lib/net7.0/ZstdSharp.dll",
+        "lib/net8.0/ZstdSharp.dll",
+        "lib/netcoreapp3.1/ZstdSharp.dll",
+        "lib/netstandard2.0/ZstdSharp.dll",
+        "lib/netstandard2.1/ZstdSharp.dll",
+        "zstdsharp.port.0.8.0.nupkg.sha512",
+        "zstdsharp.port.nuspec"
+      ]
+    },
     "MyApplication.Client/1.0.0": {
       "type": "project",
       "path": "../MyApplication.Client/MyApplication.Client.csproj",
@@ -1222,6 +2995,7 @@
     "net8.0": [
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 8.*",
       "MudBlazor >= 7.8.0",
+      "MudBlazor.Extensions >= 2.0.5",
       "MyApplication.Client >= 1.0.0"
     ]
   },
@@ -1278,6 +3052,10 @@
           "MudBlazor": {
             "target": "Package",
             "version": "[7.8.0, )"
+          },
+          "MudBlazor.Extensions": {
+            "target": "Package",
+            "version": "[2.0.5, )"
           }
         },
         "imports": [
