@@ -2,7 +2,25 @@
 
 <PageTitle>Home</PageTitle>
 
-<MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+<MudCard>
+    <MudCardContent>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#24A148"
+                    d="M38.4,22.3C28.8,38.7,-14.2,35.9,-26.2,18.1C-38.2,0.3,-19.1,-32.4,2.4,-31C24,-29.6,47.9,6,38.4,22.3Z"
+                    transform="translate(100 100)" />
+        </svg>
+        <MudCardActions>
+            <MudButton Variant="Variant.Filled" Color="Color.Success">Display profiles</MudButton>
+        </MudCardActions>
+
+    </MudCardContent>
+</MudCard>
+
+
+<MudImage Src="images/user.jpg" Width="200" Height="150" Alt="" Elevation="25" Class="rounded-lg ma-4" />
+<MudImage Src="" Width="332" Height="250" Alt="" Elevation="25" Class="rounded-lg ma-4" />
+<MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows="@arrows" ShowBullets="@bullets"
+    EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
     <MudCarouselItem Transition="transition" Color="@Color.Success">
         <div class="d-flex" style="height:100%">
             <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
@@ -15,13 +33,14 @@
     </MudCarouselItem>
     <MudCarouselItem Transition="transition">
         <div class="d-flex" style="height:100%">
-            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Success" Size="@Size.Large" />
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Success"
+                Size="@Size.Large" />
         </div>
     </MudCarouselItem>
 </MudCarousel>
 
 
-@code{ 
+@code {
     private bool arrows = true;
     private bool bullets = true;
     private bool enableSwipeGesture = true;
