@@ -7,7 +7,78 @@
 
 
 <MudButton OnClick="@AddItem" Color="@Color.Success" Class="add-item-btn" Variant="Variant.Filled">Add Item</MudButton>
-<MudButton OnClick="@RemoveItem" Color="@Color.Error" Class="remove-item-btn" Variant="Variant.Filled">Remove Item</MudButton>
+<MudButton OnClick="@RemoveItem" Color="@Color.Error" Class="remove-item-btn" Variant="Variant.Filled">Remove Item
+</MudButton>
+<MudChip T="string">@state</MudChip>
+<MudFileUpload T="IBrowserFile" FilesChanged="UploadFiles">
+    <ActivatorContent>
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   StartIcon="@Icons.Material.Filled.CloudUpload">
+            Upload Files
+        </MudButton>
+    </ActivatorContent>
+</MudFileUpload>
+
+<MudFileUpload T="IBrowserFile" FilesChanged="UploadFiles">
+    <ActivatorContent>
+        <MudFab Color="Color.Secondary"
+                StartIcon="@Icons.Material.Filled.Image"
+                Label="Load picture" />
+    </ActivatorContent>
+</MudFileUpload>
+
+<MudFileUpload T="IBrowserFile" FilesChanged="UploadFiles">
+    <ActivatorContent>
+        <MudFab Color="Color.Success"
+                StartIcon="@Icons.Material.Filled.AttachFile" />
+    </ActivatorContent>
+</MudFileUpload>
+
+<MudFileUpload T="IBrowserFile" FilesChanged="UploadFiles">
+    <ActivatorContent>
+        <MudIconButton Color="Color.Info"
+                       Icon="@Icons.Material.Filled.PhotoCamera">
+        </MudIconButton>
+    </ActivatorContent>
+</MudFileUpload>
+
+<MudFileUpload T="IBrowserFile" FilesChanged="UploadFiles" Disabled>
+    <ActivatorContent>
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary">
+            Disabled Button
+        </MudButton>
+    </ActivatorContent>
+</MudFileUpload>
+
+@if (_files != null)
+{
+    <MudText Typo="@Typo.h6">@_files.Count() File@(_files.Count() == 1 ? "" : "s"):</MudText>
+    <MudList T="string">
+        @foreach (var file in _files)
+        {
+            <MudListItem Icon="@Icons.Material.Filled.AttachFile" @key="@file">
+                @file.Name <code>@file.Size bytes</code>
+            </MudListItem>
+        }
+    </MudList>
+}
+
+@code
+{
+    IList<IBrowserFile> _files = new List<IBrowserFile>();
+    private void UploadFiles(IBrowserFile file)
+    {
+        _files.Add(file);
+        //TODO upload the files to the server
+    }
+}
+
+@code
+{
+
+}
 
 <MudDataGrid Items="@_items">
     <Columns>
@@ -23,29 +94,42 @@
 
 @code {
 
-    public record Model (string Name, int Age, Severity Status, decimal Salary, DateTime HireDate, bool IsManager);
+    [Inject] private IDialogService DialogService { get; set; }
+
+    string state = "Element Deleted";
+    public record Model(string Name, int Age, Severity Status, decimal Salary, DateTime HireDate, bool IsManager);
 
     ObservableCollection<Model> _items = new ObservableCollection<Model>()
-    {
-        new Model("Sam", 56, Severity.Normal, 50_000.00M, new DateTime(2005, 3, 5), false), 
-        new Model("Alicia", 54, Severity.Info, 75_000.00M, new DateTime(2010, 1, 17), false), 
-        new Model("Ira", 27, Severity.Success, 102_000.00M, new DateTime(2017, 6, 15), true),
-        new Model("John", 32, Severity.Warning, 132_000.00M, new DateTime(2021, 12, 23), true),
-        new Model("Fred", 65, Severity.Warning, 87_000.00M, new DateTime(2003, 7, 3), false), 
-        new Model("Tabitha", 33, Severity.Info, 157_000.00M, new DateTime(2015, 2, 12), true), 
-        new Model("Hunter", 22, Severity.Success, 43_000.00M, new DateTime(2017, 9, 20), false),
-        new Model("Esme", 55, Severity.Warning, 149_000.00M, new DateTime(2017, 8, 1), true)
-    };
+{
+new Model("Sam", 56, Severity.Normal, 50_000.00M, new DateTime(2005, 3, 5), false),
+new Model("Alicia", 54, Severity.Info, 75_000.00M, new DateTime(2010, 1, 17), false),
+new Model("Ira", 27, Severity.Success, 102_000.00M, new DateTime(2017, 6, 15), true),
+new Model("John", 32, Severity.Warning, 132_000.00M, new DateTime(2021, 12, 23), true),
+new Model("Fred", 65, Severity.Warning, 87_000.00M, new DateTime(2003, 7, 3), false),
+new Model("Tabitha", 33, Severity.Info, 157_000.00M, new DateTime(2015, 2, 12), true),
+new Model("Hunter", 22, Severity.Success, 43_000.00M, new DateTime(2017, 9, 20), false),
+new Model("Esme", 55, Severity.Warning, 149_000.00M, new DateTime(2017, 8, 1), true)
+};
 
     void AddItem()
     {
         _items.Add(new Model("New Person", 44, Severity.Warning, 85_000.00M, new DateTime(2022, 1, 1), true));
     }
 
-    void RemoveItem()
+    async void RemoveItem()
     {
+
+
+        bool? result = await DialogService.ShowMessageBox(
+        "Warning",
+        "Deleting can not be undone!",
+        yesText: "Delete!", cancelText: "Cancel");
+        state = result == null ? "Canceled" : "Deleted!";
+        StateHasChanged();
+
         if (_items.Any())
         {
+
             _items.RemoveAt(0);
         }
     }
